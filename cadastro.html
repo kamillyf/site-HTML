@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<style type="text/css">
+
+    .menu ul li{ 
+  background-color: #6da3f9;
+  float: left;
+  width: 400px;
+  height: 60px;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  font-size: 24px;
+  position: relative;
+
+    }
+    .menu ul li:hover{
+      background-color: #2c69cc;
+    }
+
+
+	    h3{
+		font-family: arial;
+		color: white
+
+	    }
+     	a{
+		font-family: arial;
+		color: white
+
+	    }
+	    h1{
+        font-family: arial;
+        color: black
+        }
+        p{
+        font-family: arial;
+        }
+
+        .text-s{
+        text-shadow: 6px 6px 5px #191970;
+        }
+
+		body {
+	      font-family: arial;
+
+		}
+
+		.box {
+		 /*background: linear-gradient(pink, white);*/
+		 max-width: 500px;
+	     box-shadow: 3px 3px 3px black;
+	     padding: 10px 30px 10px 30px;
+	     margin-left: 500px;
+			 
+
+		 border:double 11px white;
+         border-top-left-radius:15px;
+         border-top-right-radius:14px;
+         border-bottom-left-radius:15px;
+         border-bottom-right-radius:16px;
+
+        background: radial-gradient(ellipse at center, #efc5ca 6%,#f18e99 96%);
+
+
+
+		}
+
+		.box-campos {
+			margin-bottom:10px;
+		}
+
+        label {
+			color:black;			
+		}
+
+		.formataInput {
+			width: 100%;
+			height: 30px;
+			margin-top: 5px;
+            background-color: pink;
+            border-radius: 10px;
+		}                
+
+		input:hover {
+			background-color:#CFCFCF;
+			border-color: #CD3278;
+		}
+
+		input:focus {
+			background-color: white;
+			border-color: #CD3278;
+		} 
+
+		.button {
+			background-color: #FFB6C1;
+			border-bottom: 5px solid #FFB6C1;
+			border-right: 5px solid #FFB6C1;
+			border-top: 5px solid #FFB6C1;
+			border-left: 5px solid #FFB6C1;
+			width: 100%;
+			color:black;
+			padding: 10px 0px 10px 0px;
+			border-radius: 5px;
+			font-size: 20px;
+			text-shadow: 1px 1px gray;
+		}
+
+		.button:hover {
+		  background-color: #CD3278;
+		  border-bottom: 5px solid #CFCFCF;
+		  border-right: 5px solid #CFCFCF;
+		  border-top: 5px solid gray;
+		  border-left: 5px solid gray;
+		}
+
+		/*.button:focus{
+		  background-color: #FFB6C1;
+		  border-bottom: 5px solid #FFB6C1;
+		  border-right: 5px solid #FFB6C1;
+		  border-top: 5px solid #FFB6C1;
+		  border-left: 5px solid #FFB6C1;
+		} \*
+
+</style>
+
+
+<head>
+
+    <link rel="icon" href="logotopdostop.png" sizes="32x32">
+
+	<title>Cadastro</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">   
+
+</head>
+  
+
+<body>
+
+<p align="center"><img src="logotopdostop.png"></p>
+<h2 align="center" class="text-s"><i> Você linda de bonita!</i></h2> 
+
+
+<nav class="menu">
+    <ul>
+        <li><a href="trabalho.html">Home</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+    </ul>
+</nav>
+
+     <br>
+     <br>
+     <br>
+     <br>
+
+<div class="box">
+	
+            <h1>Cadastro de Cliente</h1>
+		    <hr>
+            <form>
+            
+<div class="box-campos">
+				<label class="formataLabel" for="nome">Nome</label>
+				<input class="formataInput" id="nome" name="nome" type="text" placeholder="Digite seu nome" required minlength="5">
+</div>
+<div class="box-campos">
+				<label class="formataLabel" for="aniversario">Data de Nascimento</label>
+				<input class="formataInput" id="aniversario" type="date" required>
+</div>
+
+<div class="box-campos">
+				<label class="formataLabel">Sexo</label>
+				<br>
+				<input name="sexo" id="f" type="radio" value="f"><label for="f">Feminino</label>
+				<input name="sexo" id="m" type="radio" value="m"><label for="m">Masculino</label>
+</div>
+
+<div class="box-campos">
+				<label class="formataLabel" for="email">E-Mail</label>
+				<input class="formataInput" id="email" type="email" required placeholder="nome@email.com">
+</div>
+
+
+<div class="box-campos">
+				<label class="formataLabel" for="senha">Senha</label>
+				<input class="formataInput" id="senha" type="password" minlength="6" required>
+</div>
+
+<div class="box-campos">
+				<label class="formataLabel">Qual a loja mais perto de você?</label>
+				<br>
+				<input name="loja" type="radio" ><label for="f">Loja 1</label>
+				<input name="loja" type="radio" ><label for="m">Loja 2</label>
+				<input name="loja" type="radio" ><label for="m">Loja 3</label>
+</div>
+
+<div class="box-campos">
+				<input class="button" type="submit" value="Cadastrar">
+</div>
+
+</form>
+        
+</div>
+
+</body>
+</html>
